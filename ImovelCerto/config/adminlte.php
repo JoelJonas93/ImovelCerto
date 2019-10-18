@@ -133,15 +133,16 @@ return [
         ['header' => 'main_navigation'],
         [
             'text'        => 'Corretores',
-            'icon'        => 'fa fa-users',
+            'icon'        => 'fa fa-fw fa-users',
             'submenu' => [
                 [
                     'text' => 'Listar Corretores',
-                    'icon' => '',
+                    'icon' => 'fa fa-fw fa-list',
+                    'route' => 'corretores.index',
                 ],
                 [
                     'text' => 'Incluir Corretor',
-                    'icon' => '',
+                    'icon' => 'fa fa-fw fa-user-plus',
                 ],
             ],
         ],
