@@ -42,7 +42,7 @@ class CorretorController extends Controller
      */
     public function create()
     {
-        //
+        return view('corretor.create');
     }
 
     /**

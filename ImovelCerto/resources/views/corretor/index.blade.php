@@ -12,8 +12,8 @@
         <div class="panel-heading clearfix">
             Relação dos corretores
             <div class="pull-right">
-                <a href="#" class="btn btn-info"><i class="fas fa-sync"></i> Atualizar a tela</a>
-                <a href="#" class="btn btn-sucess"><i class="fas fa-plus"></i> Inserir um novo registro</a>
+                <a href="{{ route('corretores.index') }}" class="btn btn-info"><i class="fas fa-sync"></i> Atualizar a tela</a>
+                <a href="{{ route('corretores.create') }}" class="btn btn-sucess"><i class="fas fa-plus"></i> Inserir um novo registro</a>
             </div>
         </div>
         <div class="panel-body">
@@ -36,15 +36,15 @@
                             <td>
 
                                 <!--Botão de detalhe do registro  -->
-                                <a href="#" class="btn btn-xs btn-primary">
+                                <a href="{{ route('corretores.show', $corretor) }}" class="btn btn-xs btn-primary">
                                     <i class="fas fa-fx fa-eye"></i>
                                 </a>
                                 <!--Botão de edição do registro  -->
-                                <a href="#" class="btn btn-xs btn-warning">
+                                <a href="{{ route('corretores.edit', $corretor) }}" class="btn btn-xs btn-warning">
                                     <i class="fas fa-fx fa-pencil-alt"></i>
                                 </a>
                                 <!--Botão de exclusão do registro  -->
-                                <form action="#" method="post" 
+                                <form action="{{ route('corretores.destroy', $corretor) }}" method="post" 
                                 onsubmit="return confirm('Você tem certeza de' +
                                 'que quer excluir este registro?');" 
                                 style="display: inline-block">
