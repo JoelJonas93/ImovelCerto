@@ -32,7 +32,7 @@ class CorretorController extends Controller
     {
         $corretores = Corretor::all();
 
-        return view('corretores.index', $corretores)
+        return view('corretor.index', compact("corretores"));
     }
 
     /**
