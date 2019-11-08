@@ -40,7 +40,7 @@
                                     <i class="fas fa-fx fa-eye"></i>
                                 </a>
                                 <!--Botão de edição do registro  -->
-                                <a href="{{ route('corretores.edit', $corretor) }}" class="btn btn-xs btn-warning">
+                                <a href="{{ route('corretores.edit', $corretor->id) }}" class="btn btn-xs btn-warning">
                                     <i class="fas fa-fx fa-pencil-alt"></i>
                                 </a>
                                 <!--Botão de exclusão do registro  -->

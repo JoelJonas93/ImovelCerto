@@ -25,3 +25,11 @@ Auth::routes();
 //Route::get('/corretores','CorretorController@index')->name('corretores.index');
 
 Route::resource('corretores','CorretorController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

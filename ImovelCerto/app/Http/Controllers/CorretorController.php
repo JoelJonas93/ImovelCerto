@@ -53,7 +53,9 @@ class CorretorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Corretor::create($request->all());
+
+        return redirect()->route('corretores.index');
     }
 
     /**
@@ -73,9 +75,10 @@ class CorretorController extends Controller
      * @param  \App\Corretor  $corretor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Corretor $corretor)
+    public function edit($id)
     {
-        //
+        //$corretor = Corretor::find($id)
+        //return view('corretor.edit',compact('corretor'));
     }
 
     /**
@@ -87,7 +90,9 @@ class CorretorController extends Controller
      */
     public function update(Request $request, Corretor $corretor)
     {
-        //
+        Corretor::update($request->all());
+
+        return redirect()->route('corretores.index');
     }
 
     /**
